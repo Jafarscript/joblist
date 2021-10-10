@@ -1,0 +1,161 @@
+.main{
+    display: flex;
+    padding: 30px 150px;
+    background-color: rgba(205, 247, 245, 0.911);
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin-top: 20px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 10px;
+}
+
+.job{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    background-color: #fff;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.job:active{
+    border-left: 3px solid rgb(25, 107, 107);
+}
+
+.left{
+    display: flex;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.head{
+    color: rgb(42, 158, 158);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.work{
+    color: rgb(42, 158, 158);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.foot h6{
+    color: rgb(129, 129, 129);
+    font-weight: 100;
+    font-size: 12px;
+}
+.right{
+    display: flex;
+}
+
+.skills{
+    margin-left: 15px;
+    color: rgb(70, 187, 202);
+    font-weight: 500;
+    padding: 5px;
+    background-color: rgb(233, 250, 250);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.skills:hover{
+    background-color: rgb(25, 107, 107);
+}
+
+.placeNew{
+    padding: 2px 5px;
+    background-color: rgb(25, 107, 107);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.feature{
+    padding: 2px 5px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 940px) {
+    .main{
+        padding: 20px 10px;
+        overflow: hidden;
+    }
+    .list{
+        align-items: center;
+        /* width: 350px; */
+        width: 100%;
+    }
+
+    .job{
+        display: flex;
+        flex-direction: column;
+        /* padding: 10px; */
+        /* width: 100%; */
+        align-items: flex-start;
+    }
+    .left{
+        flex-direction: column;
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .right{
+        flex-wrap: wrap;
+    }
+    .head{
+        justify-content: flex-start;
+    }
+    .head h5{
+        margin-right: 15px;
+    }
+
+    .foot{
+        justify-content: flex-start;
+    }
+    .foot h6{
+        margin-right: 15px;
+    }
+
+    .skills{
+        margin-left: 0px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
